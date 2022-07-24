@@ -24,7 +24,6 @@ header {
   justify-content: center;
   align-content: center;
   width: 100vw;
-  background-image: linear-gradient(to bottom right,#08929c,#8f0561);
 }
 
 .wrapper {
