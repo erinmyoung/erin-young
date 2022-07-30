@@ -20,47 +20,52 @@ import Header from "./components/Header.vue";
 <style scoped>
 header {
   min-height: var(--header-height);
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  background: url('assets/art-header.png') center no-repeat;
   width: 100vw;
+  height: 100%;
+  display: flex;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  align-self: center;
+  margin: auto;
   width: 100%;
-  padding: 2rem 0;
+  max-width: 80%;
+  height: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  position: relative;
 }
 
 nav {
-  font-size: 16px;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  color: var(--color-text-hover);
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-nav, .details {
+  font-size: 18px;
   display: block;
   margin: auto;
 }
 
-.details {
-  font-size: 45px;
+nav a.router-link-exact-active {
+  color: var(--color-accent);
+}
+
+nav a.router-link-exact-active:hover {
+  color: var(--color-accent-hover);
+}
+
+nav a {
+  color: var(--color-text);
+  display: inline-block;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-left: 2px solid var(--color-border);
+}
+
+nav a:hover {
+  color: var(--color-accent-hover);
+}
+
+nav a:first-of-type {
+  border: 0;
 }
 </style>
